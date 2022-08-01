@@ -90,6 +90,10 @@ section,
     cursor: pointer;
 }
 
+.nav-btn:hover {
+    background: #81c1cf;
+}
+
 .articles {
     margin-top: 190px;
     display: flex;
@@ -365,6 +369,10 @@ img {
     color: #10132c;
 }
 
+.up-btn:hover {
+    background: #f2f9fa;
+}
+
 .up-btn i {
     font-size: 50px;
     background-image: linear-gradient(to right, #13547A, #80D0C7);
@@ -523,10 +531,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+
+.social-item:hover {
+    background: #81c1cf;
 }
 
 .fa-bars {
     display: none;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: #123037;
 }
 
 @media screen and (max-width: 575.98px) {
@@ -569,12 +588,14 @@ footer {
     }
 
     .nav-btn {
-        top: 130%;
-        margin: 0 25%;
+        top: 115%;
+        margin: 0 20%;
+        width: 50px;
+        height: 50px;
     }
 
     .articles {
-        margin-top: 75px;
+        margin-top: 40px;
         text-align: center;
     }
 
@@ -635,11 +656,20 @@ footer {
         font-family: "Nunito Sans";
     }
 
-    .detail-title {
-        font-size: 16px;
-        color: #10132c;
-        font-weight: 700;
-        font-family: "Nunito Sans";
+    .desc-center {
+
+        margin: 10% 0;
+    }
+
+    .author {
+        display: flex;
+        line-height: 30px;
+        margin-top: 5%;
+    }
+
+    .content-detail {
+        display: flex;
+        gap: 10px;
     }
 
     .detail-title {
@@ -655,9 +685,9 @@ footer {
     }
 
     .up-btn {
-        width: 70px;
-        height: 70px;
-
+        width: 65px;
+        height: 65px;
+        cursor: pointer;
     }
 
     .up-btn i {
@@ -665,8 +695,17 @@ footer {
         line-height: 70px;
     }
 
+    .loading {
+        height: 80px;
+        line-height: 80px;
+    }
+
     footer {
         height: 773px;
+    }
+
+    .footer-container {
+        padding: 75px 0;
     }
 
     .container,
@@ -678,10 +717,6 @@ footer {
     .row-contact .contact-detail {
         text-align: center;
 
-    }
-
-    .social-item:nth-child(4) {
-        background: #81c1cf;
     }
 
     .copyright {
@@ -709,15 +744,12 @@ footer {
         margin-bottom: 15%;
     }
 
-    .desc-center {
-
-        margin: 10% 0;
+    .col-contact {
+        justify-content: space-around;
     }
 
-    .author {
-        display: flex;
-        line-height: 30px;
-        margin-top: 5%;
+    .social-list {
+        gap: 5px;
     }
 }
 
@@ -729,7 +761,6 @@ footer {
     .nav-bar .row {
         width: 70%;
         margin: 0 auto;
-
     }
 
     .article-right,
@@ -767,7 +798,7 @@ footer {
     }
 
     .articles {
-        margin-top: 75px;
+        margin-top: 65px;
         text-align: center;
     }
 
